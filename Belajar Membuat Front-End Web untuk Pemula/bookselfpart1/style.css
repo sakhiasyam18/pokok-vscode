@@ -1,0 +1,147 @@
+/* General Reset */
+body,
+h1,
+h2,
+h3,
+p,
+div,
+form,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Mengganti font menjadi Poppins */
+    background-color: #FBFBFB;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #A594F9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+/* Main Container */
+main {
+    width: 50%;
+    background-color: #FFF4D2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #E3DFFD;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+form:hover {
+    background-color: #E5D1FA;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Styling */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CDC1FF;
+    border-radius: 5px;
+    background-color: #FBFBFB;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover {
+    border-color: #C4D9FF;
+    background-color: #FFFFFF;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Button Styling */
+button {
+    background-color: #C5BAFF;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #A594F9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1) rotate(-3deg);
+    /* Hover dengan efek 3D */
+}
+
+/* Book Items */
+#incompleteBookList,
+#completeBookList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+[data-testid="bookItem"] {
+    background-color: #F5EFFF;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+[data-testid="bookItem"]:hover {
+    background-color: #E8F9FF;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Jarak Antar Tombol */
+button[data-testid] {
+    margin-right: 10px;
+    /* Menambahkan jarak antar tombol */
+}
+
+button[data-testid]:hover {
+    background-color: #C5BAFF;
+    color: #FFFFFF;
+    border: 1px solid #C4D9FF;
+    transform: translateY(-2px) scale(1.05);
+    /* Hover 3D untuk tombol */
+}
