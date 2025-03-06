@@ -9,9 +9,12 @@ $nilai = null;
 echo $desimal;
 
 echo $nilai;
-$b = 3;
+$b = 10;
 $a = 10;
 echo "\n";
 echo $a;
 echo "\n";
 echo $b;
+
+var_dump($a == $b);
+var_dump($a === $b);
