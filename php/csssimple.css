@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    /* Remove default margin */
+    font-family: Arial, sans-serif;
+    /* Set a clean font */
+}
+
+#header {
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Vertically center items */
+    background-color: #4a4a4a;
+    /* Grey background */
+    padding: 10px 20px;
+    /* Add some padding */
+    height: 80px;
+    /* Set a fixed height similar to the image */
+}
+
+#logo img {
+    height: 60px;
+    /* Adjust logo size */
+}
+
+.header-title {
+    flex-grow: 1;
+    /* Allow title to take remaining space */
+    text-align: center;
+    /* Center the title */
+    color: white;
+    /* White text color */
+}
+
+.header-title h1 {
+    margin: 0;
+    /* Remove default margin from h1 */
+    font-size: 24px;
+    /* Adjust font size to match the image */
+}
+
+.search-box {
+    margin-right: 10px;
+    /* Space between search box and button */
+}
+
+.search-box input {
+    padding: 5px;
+    /* Add padding to the input */
+    border: 1px solid #ccc;
+    /* Light grey border */
+    border-radius: 3px;
+    /* Slightly rounded corners */
+}
+
+.search-button button {
+    padding: 5px 10px;
+    /* Padding for the button */
+    background-color: #ccc;
+    /* Light grey background for the button */
+    border: none;
+    /* Remove default border */
+    border-radius: 3px;
+    /* Slightly rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.search-button button:hover {
+    background-color: #b0b0b0;
+    /* Slightly darker grey on hover */
+}
