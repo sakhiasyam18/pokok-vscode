@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Diri Sendiri</title>
+    <link rel="stylesheet" href="bikinformindah.css">
+</head>
+
+<body>
+    <div class="formulir">
+        <h2>FORMULIR ISI DIRI</h2>
+        <form method="post">
+            <p>Nama <input type="text" name="username" placeholder="username" required></p>
+            <p>NIS/NISN <input type="text" name="umur" placeholder="wajib angka" required></p>
+            <label for="jenis">Pilih Kelas:</label>
+            <select id="jenis" name="jenis" required>
+                <option value="" disabled selected>Pilih Jenis Kelamin</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+            <br>
+            Tanggal Lahir <input type="date" name="lahir" required>
+            <br>
+            <label for="telepon">Nomor Telepon/HP:</label>
+            <input type="text" id="telepon" name="telepon" placeholder="Masukkan Nomor Telepon" required>
+            <label for="foto">Upload Foto (JPG/PNG):</label>
+            <input type="file" id="foto" name="foto" accept="image/jpeg, image/png" required>
+            
+            <input type="submit" name="klik" value="Kirim Data">
+        </form>
+    </div>
+
+
+</body>
+
+</html>
