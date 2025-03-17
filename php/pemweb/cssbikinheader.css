@@ -1,0 +1,31 @@
+.body{
+    margon: 0;
+}
+
+#seluruhan{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    height: 80px;
+
+}
+
+#logo{
+    height: auto;
+
+}
+
+.judul{
+    flex: auto;
+    text-align: center;
+    color: white;
+}
+
+.pencarian{
+    margin-right: auto;
+}
+
+.klik{
+    background-color: aliceblue;
+}
